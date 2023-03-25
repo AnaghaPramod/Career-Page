@@ -1,0 +1,36 @@
+
+
+
+
+<section class="py-5">
+    <div class="container bg-light text-center border border-2 p-3">
+        <h5>Career Opportunities</h5>
+  
+        <br>
+       <div>
+        <a class="text-dark" style="text-decoration: none;" href="#" >All</a> &nbsp; &nbsp;
+        <a class="text-dark" style="text-decoration: none;" href="#">Africa</a> &nbsp; &nbsp;
+        <a class="text-dark" style="text-decoration: none;" href="#">India</a> &nbsp; &nbsp;
+        <a class="text-dark" style="text-decoration: none;" href="#">London</a> &nbsp; &nbsp;
+        <a class="text-dark" style="text-decoration: none;" href="#">UAE</a>
+       </div>
+        <div class="container px-4 px-lg-5 my-5 " >
+            <div class="row  border border-2  p-5">
+                <table  >
+                    <tr>
+                        <th class="text-start ps-5">Marketing</th>
+                        <th></th>
+                    </tr>
+                    <tr >
+                        <th class="text-start ps-5">Education (Full-Time)</th>
+                    </tr>
+                    <tr  *ngFor="let page of allpages" >
+                        <td class="text-start ps-5">{{page.title}}</td>
+                        <td class="text-end pe-5">{{page.location}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+  </section>
