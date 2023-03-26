@@ -47,6 +47,7 @@
     <p>Lorem ipsum is placeholder text commonly used graphic, print, and publishing industries for previewing layouts?</p>
   </div>
 </div>
+<!-- bg  -->
 
 
 
@@ -72,14 +73,10 @@
 <!-- why work with us -->
 <div class="row gx-4 gx-lg-5 align-items-center my-5 border  m-5 p-5">
   <div class="col-lg-6"><img class="img-fluid rounded mb-4 mb-lg-0" src="https:\/\/admin-edubex.ipixsolutions.net\/storage\/cms\/image\/7eG0ePz3Rn8X2cfUaMUIZBzmNiC2Jz9MoY0yc35S.png" alt="..." /></div>
-  <div class="col-lg-6">
-      <h1 class="font-weight-light">Why work with us</h1>
+  <div class="col-lg-6" >
+      <h1 *ngFor="let page of allpages" class="font-weight-light">{{page.Title}}</h1>
       <p><br></p>
-      <ul>
-        <li>A world of opportunity to interact with people in various related fields,thus keeping you constantly updated with the evolving skills and tools.</li>
-          <li>Become a technology transformation associate for some of the successful educational orgranisations by assisting them escalate into the world of digital education.</li>
-          <li>Think out of the box,enjoy and feel comfortable with your work , collaborating with similar talents at Edubex.</li>
-        </ul>
+      <p *ngFor="let page of allpages">{{page.Description}}</p>
       
   </div>
 </div>       
@@ -90,19 +87,14 @@
 <!-- perks and benefits  -->
 <div class="border  m-5 p-5" style="position: relative; display: flex; align-items: center; justify-content: center; height: 500px; background-image: url('https:\/\/admin-edubex.ipixsolutions.net\/storage\/cms\/image\/6p51DNjrv98ZO4EvBQnRvA8TBHteEQTsKzf8fPrC.png'); background-size: cover;">
   <div class="text-light text-start " style="position: relative; width: 70%; padding: 50px; text-align: center; ">
-    <h2>Perks and benefits</h2>
-    <p>Apart from a competitive salary,working at edubex entitles you to the best perks and benefits in the industry.</p>
+    <h2 *ngFor="let page of allpages">{{page.TITLE}}</h2>
+    <p *ngFor="let page of allpages">{{page.DESCRIPTION}}</p>
   </div>
   <div class="border" style="position: absolute; bottom: -50px; right: 0; width: 30%; padding: 20px; background-color: rgba(255, 255, 255, 0.8); margin-right: 3cm; ">
-    <p>It's not how much you do, what matters is how different you do things to provide an effective learning experience to the students. At the Edubex, we encourage creativity, team work and willingness to learn - the cornerstones of success.</p>
+    <p *ngFor="let page of allpages">{{page.para}}</p>
   </div>
 </div>
 <!-- perks and benefits  -->
-
-
-
-
-
 
 
 

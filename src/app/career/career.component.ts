@@ -9,6 +9,7 @@ import { ApiService } from './api.service';
 export class CareerComponent {
 
   allpages: any=[];
+  
 
   constructor(private api:ApiService){
 
@@ -22,5 +23,8 @@ export class CareerComponent {
     )
   }
 
- 
+  
+  
+
+  
 }

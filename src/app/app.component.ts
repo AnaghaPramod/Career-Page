@@ -9,4 +9,19 @@ import { ApiService } from './career/api.service';
 export class AppComponent {
   title = 'App';
   
+
+  
+  allpages: any=[];
+
+  constructor(private api:ApiService){
+
+  }
+
+  ngOnInit():void{
+    this.api.getallpages().subscribe(
+      (data:any)=>{
+        this.allpages=data.pages
+      }
+    )
+  }
 }
